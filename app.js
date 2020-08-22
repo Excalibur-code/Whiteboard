@@ -22,9 +22,9 @@ io.on("connection", function (socket) {
         socket.broadcast.emit("onmm", point);
     })
 })
-// app.get("/home", function (req, res) {
-//      res.end("<h1>Welcome to the home page</h1>");///home is the route where information is.
-// })
+ app.get("/", function (req, res) {
+      res.end("<h1>Welcome to the home page</h1>");///home is the route where information is.
+ })
 
 //connection
 
