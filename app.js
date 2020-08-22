@@ -22,9 +22,11 @@ io.on("connection", function (socket) {
         socket.broadcast.emit("onmm", point);
     })
 })
- app.get("/", function (req, res) {
-      res.end("<h1>Welcome to the home page</h1>");///home is the route where information is.
- })
+app.use(express.static("client"));//used to provide front end whilst making web app...html file will be recieved here.
+//ln 26-28 will be used if we make a desktop app not a web app.
+// app.get("/", function (req, res) {
+//      res.end("<h1>Welcome to the home page</h1>");///home is the route where information is.
+// })
 
 //connection
 
