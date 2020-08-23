@@ -1,9 +1,9 @@
-const { ftruncateSync } = require("fs");
+//const { ftruncateSync } = require("fs");
 
 //this on func will work for other client change request
 socket.on("colorchange", function (color) {
     ctx.strokeStyle = color;
-})
+});
 socket.on("onmd", function (point) {
      let {color,width,x,y} = point;
      ctx.lineWidth = width;

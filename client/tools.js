@@ -1,5 +1,5 @@
 //connect to ws server
-const io = require("socket.io-client");
+//const io = require("socket.io-client");
 //const socket = io.connect("http://localhost:3000");
 const socket = io.connect("https://m-whiteboard.herokuapp.com/");//here we put the url of the herouku app created
 console.log(socket);
